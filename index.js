@@ -9,9 +9,8 @@ const updateMessaggeInfo = () => {
 const addMessage = () => {
     messagesCount++;
     console.log({ messagesCount, heavyObj: 'X'.repeat(200 * MB) });
-    updateMessaggeInfo();   
+    updateMessaggeInfo();
+    setTimeout(() => {
+        addMessage()
+    }, 1000); 
 }
-
-setInterval(() => {
-    addMessage()
-}, 3000);
