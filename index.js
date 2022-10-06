@@ -14,3 +14,4 @@ const addMessage = () => {
         addMessage()
     }, 1000); 
 }
+addMessage();
